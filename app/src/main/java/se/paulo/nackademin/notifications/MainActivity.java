@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn = (Button)findViewById(R.id.btnNotification);
+        //Button btn = (Button)findViewById(R.id.btnNotification);
 
     }
 
@@ -32,5 +32,7 @@ public class MainActivity extends AppCompatActivity {
         int notificationId = 1;
         NotificationManager manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
         manager.notify(notificationId, builder.build());
+
+
     }
 }
